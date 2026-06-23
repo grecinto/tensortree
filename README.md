@@ -28,7 +28,7 @@ Instead of treating memory as a flat pile of vectors, TensorTree lets you organi
 
 The breakthrough feature in this example is semantic category-path matching: a simpler path like `Root/Knowledge` can still resolve to a more concrete category such as `Root/Engineering` because the system compares the meaning of the path components rather than requiring an exact lookup.
 
-A key part of making semantic search work is vectorization. TensorTree uses the Vectorize API to turn content into embeddings on demand, so the system can compare meaning without requiring a heavy reindexing workflow. In practice, this means a simple vectorization step can be applied to new content, and the resulting vectors are used immediately for semantic retrieval.
+A key part of making semantic search work is vectorization & triangulation. TensorTree uses the Vectorize API (& relative reference points part of "triangulation" algorithm) to turn content into embeddings on demand, so the system can compare meaning without requiring a heavy reindexing workflow. In practice, this means a simple vectorization step can be applied to new content, and the resulting vectors are used immediately for semantic retrieval.
 
 A key idea behind TensorTree is that categories are not just labels for retrieval—they are inherently visualizable. In SOP, KnowledgeBases can be surfaced through the SOP Data Manager, where Spaces add a visual layer that makes the category graph and its relationships easier to explore, understand, and reason about.
 
