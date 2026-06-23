@@ -6,8 +6,8 @@ The example demonstrates how the memory layer can be used to:
 
 - create a nested category hierarchy,
 - insert items into a category,
-- list categories,
-- run path-based searches,
+- refresh semantic vectors,
+- run a simpler semantic path query such as `Root/Knowledge`,
 - and rely on vectorization through the Vectorize API to make semantic retrieval work without a heavy reindexing pass.
 
 The current repository layout is intentionally simple: one example, one entrypoint, and one persistent data directory for the demo.

@@ -12,7 +12,7 @@ TensorTree is a developer-friendly approach to semantic memory built on top of S
 
 The repository currently includes one runnable example:
 
-- `src/examples/cli_kb_demo/main.go` — creates nested categories, inserts items, lists categories, and searches by path using the filesystem-backed KnowledgeBase wrapper.
+- `src/examples/cli_kb_demo/main.go` — creates a small category hierarchy, inserts content, refreshes semantic vectors, and then queries a simpler, semantically related path such as `Root/Knowledge` to demonstrate the breakthrough semantic category-path matching feature.
 
 Run it with:
 
@@ -25,6 +25,8 @@ The example writes its demo data under `./data/demo-cli-kb` and can be reset by 
 ## TensorTree In-Depth
 
 Instead of treating memory as a flat pile of vectors, TensorTree lets you organize knowledge into meaningful categories, nest those categories into a hierarchy, and retrieve content through either path-based navigation or semantic similarity.
+
+The breakthrough feature in this example is semantic category-path matching: a simpler path like `Root/Knowledge` can still resolve to a more concrete category such as `Root/Engineering` because the system compares the meaning of the path components rather than requiring an exact lookup.
 
 A key part of making semantic search work is vectorization. TensorTree uses the Vectorize API to turn content into embeddings on demand, so the system can compare meaning without requiring a heavy reindexing workflow. In practice, this means a simple vectorization step can be applied to new content, and the resulting vectors are used immediately for semantic retrieval.
 
