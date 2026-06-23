@@ -49,7 +49,7 @@ Most vector databases are great at similarity search, but they can feel too low-
 - nested paths make the knowledge base readable and explainable,
 - retrieval can be guided by both taxonomy and meaning.
 
-The result is a semantic memory layer that is easier to reason about and easier to build with.
+The result is a semantic memory layer that is easier to reason about, scalable and easier to build with.
 
 ## Getting started
 
@@ -73,6 +73,6 @@ From there, you can create a category tree, add content, and retrieve relevant i
 
 TensorTree is not just a vector store. It is a practical semantic memory layer that helps AI applications remember and retrieve information in a way that is structured, navigable, and developer-friendly.
 
-The important usability point is that semantic search is powered by a simple Vectorize step, not by a heavyweight reindexing pipeline. That keeps the workflow approachable while still enabling meaning-based retrieval.
+The important usability point is that semantic search is powered by a simple Vectorize step, not by a heavyweight reindexing pipeline. That keeps the workflow approachable, scalable while still enabling meaning-based retrieval.
 
 If you want a simple way to bring structured semantic memory into your AI app, TensorTree is a strong place to start.
