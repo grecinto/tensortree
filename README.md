@@ -4,8 +4,8 @@ TensorTree is a developer-friendly approach to semantic memory built on top of S
 
 ## Repository layout
 
-- `docs/architecture.md` — high-level architecture notes
-- `article.md` — a conceptual article connecting TensorTree and the deterministic SOP mesh
+- [architecture](docs/architecture.md) — high-level architecture notes
+- [article](article.md) — a conceptual article connecting TensorTree and the deterministic SOP mesh
 - `src/examples/cli_kb_demo/` — the single runnable KnowledgeBase example
 - `src/` — source snapshot from the SOP memory subsystem
 
